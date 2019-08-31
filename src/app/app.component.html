@@ -7,19 +7,18 @@
     <h1>LOGO</h1>
     <span class="menu-spacer"></span>
     <div>
-      <a mat-button [routerLink]="'/home'"> Home </a>
-      <a mat-button [routerLink]="'/services'"> Services </a>
-      <a mat-button [routerLink]="'/industry'"> Industry </a>
-      <a mat-button [routerLink]="'/contact'"> Contact </a>
-      <a mat-button [routerLink]="'/team'"> Team</a>
-      <a mat-button [routerLink]="'/about'"> About </a>
-
+      <a mat-button [routerLink]="['/home']"> Home </a>
+      <a mat-button [routerLink]="['/services']"> Services </a>
+      <a mat-button [routerLink]="['/industry']"> Industry </a>
+      <a mat-button [routerLink]="['/contact']"> Contact </a>
+      <a mat-button [routerLink]="['/team']"> Team</a>
+      <a mat-button [routerLink]="['/about']"> About </a>
     </div>
   </mat-toolbar-row>
 
-  <mat-toolbar-row>
+  <!-- <mat-toolbar-row>
       <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
-    </mat-toolbar-row>
+    </mat-toolbar-row> -->
 </mat-toolbar>
 
 <app-home></app-home>
