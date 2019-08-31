@@ -1,5 +1,30 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <!-- <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button> -->
+    <h1>LOGO</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/home'"> Home </a>
+      <a mat-button [routerLink]="'/services'"> Services </a>
+      <a mat-button [routerLink]="'/industry'"> Industry </a>
+      <a mat-button [routerLink]="'/contact'"> Contact </a>
+      <a mat-button [routerLink]="'/team'"> Team</a>
+      <a mat-button [routerLink]="'/about'"> About </a>
+
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+      <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<app-home></app-home>
+
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,6 +41,6 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
 
 <router-outlet></router-outlet>
