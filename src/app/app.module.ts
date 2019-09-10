@@ -14,6 +14,7 @@ import { ServicesComponent } from './services/services.component';
 import { TeamComponent } from './team/team.component';
 import { IndustryComponent } from './industry/industry.component';
 import { ContactComponent } from './contact/contact.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -33,8 +34,8 @@ import { ContactComponent } from './contact/contact.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
-
+    MatIconModule,
+    FlexLayoutModule
   ],
   exports:[
     MatToolbarModule,

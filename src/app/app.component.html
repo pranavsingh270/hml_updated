@@ -1,10 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<mat-toolbar color="primary">
+<!-- <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <!-- <button mat-icon-button>
-      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-    </button> -->
-    <h1>LOGO</h1>
+    <h1>LOGOsdfasdfsdfasdfaqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqs</h1>
     <span class="menu-spacer"></span>
     <div>
       <a mat-button [routerLink]="['/home']"> Home </a>
@@ -16,12 +13,61 @@
     </div>
   </mat-toolbar-row>
 
-  <!-- <mat-toolbar-row>
-      <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
-    </mat-toolbar-row> -->
-</mat-toolbar>
+</mat-toolbar> -->
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+      <a class="navbar-brand" href="#">HML Consultants</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a [routerLink]="['/home']">Home</a></li>
+        <li><a [routerLink]="['/services']"> Services </a></li>
+        <li><a [routerLink]="['/industry']"> Industry </a></li>
+        <li><a [routerLink]="['/contact']"> Contact </a></li>
+        <li><a [routerLink]="['/team']"> Team</a></li>
+        <li><a [routerLink]="['/about']"> About </a></li>
+    
+      </ul>
+    </div>
+  </div>
+</nav> 
 
-<app-home></app-home>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/"><img width="100%" src="/assets/logo.jpg"></a>
+    <button #navbarToggler class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" (click)="isShown = !isShown" [attr.aria-expanded]="isShown"  aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': isShown }" id="navbarSupportedContent" >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" (click)="isShown = false" routerLink="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="isShown = false" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="isShown = false" routerLink="/imprint">Imprint</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
+<!-- <app-home></app-home> -->
 
 <!-- <div style="text-align:center">
   <h1>
