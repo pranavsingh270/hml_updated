@@ -5,7 +5,7 @@ import { HttpClientModule} from '@angular/common/http'
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule} from '@angular/material'
 
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -35,7 +35,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgbModule
   ],
   exports:[
     MatToolbarModule,
