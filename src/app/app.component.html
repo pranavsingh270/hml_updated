@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<!-- <mat-toolbar color="primary">
+ <!-- <mat-toolbar color="primary">
   <mat-toolbar-row>
     <h1>LOGOsdfasdfsdfasdfaqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqs</h1>
     <span class="menu-spacer"></span>
@@ -13,15 +13,55 @@
     </div>
   </mat-toolbar-row>
 
-</mat-toolbar> -->
-<!-- <head>
+</mat-toolbar>  -->
+  <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-</head> -->
-<nav class="navbar navbar-inverse">
+</head> 
+ 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    HML Consultants
+  </a>
+
+  <button class="navbar-toggler" type="button"
+          (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse"
+       [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/home']" (click)="toggleNavbar()">Home</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/services']" (click)="toggleNavbar()">Services</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/industry']" (click)="toggleNavbar()">Industry</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/contact']" (click)="toggleNavbar()">Contact</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/team']" (click)="toggleNavbar()">Team</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/about']" (click)="toggleNavbar()">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav><!-- <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -43,7 +83,7 @@
       </ul>
     </div>
   </div>
-</nav> 
+</nav>  -->
 
 <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" routerLink="/"><img width="100%" src="/assets/logo.jpg"></a>

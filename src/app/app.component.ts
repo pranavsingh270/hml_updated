@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   isShown:boolean = false;
   title = 'hml-app';
+
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
 }
